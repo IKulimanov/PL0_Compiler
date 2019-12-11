@@ -1,0 +1,25 @@
+var n,k,i,result;
+procedure procLast;
+begin
+  i := 1;
+  result := 0;
+  while i<=n do
+  begin
+    result := (result + k);
+    result := result % i;
+    i := i + 1;
+  end;
+end;
+begin
+read(n);
+read(k);
+if k<1 then
+begin
+    write(0);
+end
+else
+begin
+    call procLast;
+write(result + 1);
+end;
+end.
